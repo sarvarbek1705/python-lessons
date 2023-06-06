@@ -418,9 +418,58 @@
 
 # ----------------------------------------------------
 
+# 14-DARS: Dictionary (Lug'at)
 
+# car_0 = {'model':'ferrari', 'rang':'qizil'}
+# print(car_0['model'])
+# print(car_0['rang'])
 
+# talaba_0 = {'ism':'sarvarbek xalilov', 'yosh':25, 't_yil':1998}
+# print(f"{talaba_0['ism'].title()},\
+#    {talaba_0['t_yil']} yil , {talaba_0['yosh']} yoshda")
+# talaba_0['kurs'] = 4
+# talaba_0['fakultet'] = 'informatika'
+# print(talaba_0)
 
+# talaba_0 = {}
+# talaba_0['kurs'] = 3
+# talaba_0['fakultet'] = 'informatika'
+# talaba_0['ism'] = 'sarvarbek'
+# print(f"{talaba_0['ism'].title()}, {talaba_0['fakultet']} fakultetining \
+# {talaba_0['kurs']}-kurs talabasi")
 
+# 14-dars amaliyoti
 
+otam = {'ism':'odiljon', 't_yil':1971, 'kasb':'nonvoy'}
+print(f"Otamning ismi {otam['ism'].title()} {otam['t_yil']}\
+-yilda tug'ilgan, kasblari {otam['kasb']}.")
 
+#------------------------------------------
+
+sevimli_taom = {'anvar':'osh', 'sarvar':'moshkichiri', 'ravshan': 'manti', 'nozim':'shavla'}
+print(f"Anvarning sevimli taomi {sevimli_taom['anvar']}\n\
+Sarvarning sevimli taomi {sevimli_taom['sarvar']}\n\
+Nozimning sevimli taomi {sevimli_taom['nozim']}")
+
+#-------------------------------------------
+
+py_lt = {
+    'integer':'butun son',
+    'float':'o\'nlik son',
+    'string':'matn',
+    'if':'agar',
+    'else':'aks holda',
+    'for':'uchun',
+    'elif':'aks holda agar',
+    'print':'chop etmoq'
+}
+# print(f"pythonda hozirgacha o'rgangan metodlarim {py_lt}")
+
+# print(py_lt.get(user,"Bunday so'z mavjud emas"))
+
+kalit = input("Kalit so'z kiriting: ").lower()
+tarjima = py_lt.get(kalit)
+if tarjima == None:
+    print("Bunday so'z mavjud emas!")
+else:
+    print(f"{kalit.title()} so'zi {tarjima} deb tarjima qilinadi.")
